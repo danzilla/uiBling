@@ -9,16 +9,16 @@ body {
 ----------------------------------------------------- */
 
 #sidebar {
-    width: 250px;
+    width: 350px;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -350px;
     height: 100vh;
     z-index: 999;
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
-    overflow-y: scroll;
+    overflow: hidden;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,4 +75,8 @@ body {
 
 .scrollYes {
   overflow-y: auto;
+}
+
+.scrollNo{
+  overflow: hidden;
 }
