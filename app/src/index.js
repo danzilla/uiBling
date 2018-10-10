@@ -19,44 +19,8 @@ router.get('/', function(req, res, next) {
     logM: 'Login'
   }
 
-  res.render('uikit', {pageInfo});
+  res.render('index', {pageInfo});
 });
-
-
-router.get('/boot', function(req, res, next) {
-  console.log("\n ~ Hi boot ~ \n");
-
-  // pageInfo detailes
-  let pageInfo = {
-    title: "Bootstrap",
-    page: "Auth-page",
-    request: "get",
-    sessionName: "nada",
-    logM: 'Login'
-  }
-
-  res.render('bootstrap', {pageInfo});
-});
-
-
-router.get('/uiv2', function(req, res, next) {
-  console.log("\n ~ Hi boot ~ \n");
-
-  // pageInfo detailes
-  let pageInfo = {
-    title: "Bootstrap",
-    page: "Auth-page",
-    request: "get",
-    sessionName: "nada",
-    logM: 'Login'
-  }
-
-  res.render('index-bling', {pageInfo});
-});
-
-
-
-
 
 
 

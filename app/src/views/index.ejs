@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head> <%- include('layout/head') -%> </head>
+<body>
+
+<div class="wrapper h-100 ">
+  <!-- Sidebar  -->
+  <%- include('components/slideMenus') -%>
+  <!-- Page Content  -->
+  <div id="content" class="h-100 p-4">
+    <!-- content wrapper -->
+    <div class="container-fluid h-100 ">
+      <div class="row h-100 ">
+        <!-- screen size - col-1 col-md-1 col-lg-3  -->
+        <!-- first bar -->
+        <div class="col-1 col-md-1 col-lg-2">
+          <div class="mx-0 px-0 row align-items-center scrollYes h-100">
+            <div class="container scrollNo p-4 card-1 alert alert-danger">
+              <%- include('components/sideNav') -%>
+            </div>
+          </div>
+        </div>
+        <!-- second bar -->
+        <div class=" col-11 col-md-11 col-lg-10 h-100 ">
+          <div class=" row h-100">
+            <!-- second - first - content -->
+            <div class="col-11 col-md-11 col-lg-8 h-100 ">
+              <div class="container-fluid h-100 scrollYes m-0 p-0 alert card-1">
+                <%- include('content') -%>
+              </div>
+            </div>
+            <!-- second - second - summary  -->
+            <div class="col-1 col-md-1 col-lg-4">
+              <div class="row scrollYes h-100">
+                <div class="container-fluid h-100 ">
+                  <div class="row align-items-center scrollYes h-100">
+                    <div class="container card-1 p-4 alert alert-primary ">
+                      <%- include('summary') -%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<%- include('layout/foot') -%>
+</body>
+</html>
