@@ -28,6 +28,29 @@ hr {
   box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 5px 2px rgba(0,0,0,0.22);
 }
 
+.card-2 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+}
+.card-2-no {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+}
+.card-2:hover {
+    box-shadow:0 30px 70px rgba(0,0,0,.2);
+}
+
 /* STRUCTURE */
 .center-container {
   position: absolute;
